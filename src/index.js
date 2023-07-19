@@ -2,9 +2,15 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 const App = () => {
+  return(
+    <>
   <div>
+    <label> color red </label>
     <label> color blue </label>
   </div>
+    </>
+  )
+  
 };
 
 export default App;
