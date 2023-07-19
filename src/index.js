@@ -2,7 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 const App = () => {
-  return "Hello world";
+  <div>
+    <label> color blue </label>
+  </div>
 };
 
 export default App;
