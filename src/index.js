@@ -5,16 +5,24 @@ import './styles/index.css';
 
 const App = () => {
   return (
-    <div ClassName = "container">
+    <div className = "container">
       <div>
         <h1> Login </h1>
+        <br/>
         <label for = "Username"> Username </label>
+        <br/>
         <input type = "text" name = "Type your username" />
+        <br/>
         <label for = "Password"> Password </label>
+        <br/>
         <input type = "text" name = "Type your password" />
+        <br/>
         <input type = "radio" name = "Remember Me" /> Remember Me
+        <br/>
         <button type = "button"> LOGIN </button>
-        
+      </div>
+      
+      <div className = "container2">
         <ul>
           <h4>Steps</h4>
           <li>Enter your username</li>
