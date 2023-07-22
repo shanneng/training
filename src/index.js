@@ -6,45 +6,49 @@ import './styles/index.css';
 const App = () => {
   return (
     <div className = "main">
+      {/* first container */}
       <div className = "container">
         <div className="form">
-          <h1 className="form-header"> Login </h1>
-          <p className="form-label">Username</p>
-          <input className="form-input" type = "text" placeholder="Type your username" />
-          <p className="form-label">Password</p>
-          <input className="form-input" type = "text" placeholder="Type your password" />
-          <input type = "radio" name = "Remember me"/> Remember me
-          <div className = "login">
-            <button type = "button">LOGIN</button>
+          <h1 className="form-header">Login</h1>
+
+          <div className="form-field">
+            <p className="form-label">Username</p>
+            <input className="form-input" type="text" placeholder="Type your username"></input>
+          </div>     
+
+          <div className="form-field">
+            <p className="form-label">Password</p>
+            <input className="form-input" type="password" placeholder="Type your password"></input>
+          </div>      
+
+          <div className="form-field">
+            <input type="checkbox"></input>
+            <label className="form-label">Remember Me</label>
           </div>
+
+          <button className="submit-button">LOGIN</button>
         </div>
-        <div className="side-color">
-        </div>
-        
+        <div className="side-color"></div>
       </div>
       
-      
-      
-      <div className="container2">
+      {/* second container */}
+      <div className="container-2">
+        <div className="steps">
           <ul>
-           <li> <h3> Steps </h3> </li> 
+            <li>Steps</li>
+            <ul>
+              <li>Enter your username</li>
+              <li>Enter your password</li>
+              <ul>
+                <li>Click 'Remember me' to save our password</li>
+              </ul>
+              <li>Click Login button</li>
+            </ul>
           </ul>
-          <ul>
-            <li>Enter your username</li>
-            <li>Enter your password</li>
-          <ul>
-            <li>Click Remember me to save your password</li>
-          </ul>
-            <li>Click Login button</li>
-        </ul>
-
-        <div className="side-color2">
-
         </div>
+        <div className="side-color"> </div>
       </div>
-    
     </div>
-
   )
   
 };
